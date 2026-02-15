@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    color:white;
+
+    background:linear-gradient(270deg,#0f0f14,#161622,#0f0f14);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0%}
+    50%{background-position:100%}
+    100%{background-position:0%}
+}
+
+/* PARTICLES */
+canvas{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+
+/* HERO */
+.hero{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:120px;
+}
+
+/* LEFT TEXT */
+.left{
+    max-width:520px;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px)}
+    to{opacity:1}
+}
+
+.left h1{
+    font-size:70px;
+    font-weight:800;
+
+    background:linear-gradient(90deg,#7f5cff,#00e5ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:0 0 35px #7f5cff;
+}
+
+.left p{
+    margin-top:20px;
+    opacity:.85;
+}
+
+/* CARD */
+.card{
+    width:360px;
+    padding:30px;
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(25px);
+
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    box-shadow:
+        0 0 40px #7f5cff44,
+        0 0 80px #00e5ff22;
+
+    transition:transform .15s;
+}
+
+/* INPUTS */
+input, select{
+    padding:13px;
+    border-radius:12px;
+    border:none;
+    background:#1b1b24;
+    color:white;
+}
+
+/* BUTTON GLOW */
+button{
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    color:white;
+
+    background:linear-gradient(45deg,#7f5cff,#00c6ff);
+
+    cursor:pointer;
+
+    animation:pulse 2s infinite;
+    transition:.25s;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 10px #7f5cff}
+    50%{box-shadow:0 0 35px #00e5ff}
+    100%{box-shadow:0 0 10px #7f5cff}
+}
+
+button:hover{
+    transform:scale(1.06);
+}
+
+/* RESULT */
+.result{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+}

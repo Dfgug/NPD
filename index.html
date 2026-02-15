@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Koncerta biļetes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<section class="hero">
+
+    <div class="left">
+        <h1>Koncerta biļetes</h1>
+        <p>
+            Interaktīvs koncerta biļešu kalkulators, kas ļauj lietotājam ievadīt datus, 
+            veikt cenas aprēķinu un uzreiz redzēt rezultātu. Visi aprēķini tiek veikti ar JavaScript bez lapas pārlādes.
+        </p>
+    </div>
+
+    <div class="card" id="card">
+
+        <h2>Pirkt biļetes</h2>
+
+        <input type="number" id="count" placeholder="Bilešu skaits" min="1">
+
+        <select id="type">
+            <option value="standard">Standard — 20€</option>
+            <option value="vip">VIP — 50€</option>
+            <option value="backstage">Backstage — 100€</option>
+        </select>
+
+        <label class="check">
+            <input type="checkbox" id="student">
+            Studentu atlaide − 20%
+        </label>
+
+        <button id="buyBtn">Aprēķināt</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
