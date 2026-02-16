@@ -11,13 +11,13 @@ const student = document.getElementById("student");
 const result = document.getElementById("result");
 const btn = document.getElementById("buyBtn");
 
-btn.onclick = calculate;
+btn.addEventListener("click", calculate);
 
 function calculate(){
     const c = parseInt(count.value);
 
     if(!c || c<=0){
-        result.textContent="Введите количество";
+        result.textContent="Ievadiet daudzumu";
         result.style.color="#ff6b6b";
         return;
     }
@@ -83,4 +83,5 @@ function animate(){
 }
 
 animate();
+
 
