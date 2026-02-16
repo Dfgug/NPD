@@ -1,4 +1,3 @@
-/* ===== PRICE LOGIC ===== */
 
 const prices = {
     standard:20,
@@ -32,9 +31,6 @@ function calculate(){
     result.style.color = "#00ffcc";
 }
 
-
-/* ===== 3D TILT CARD ===== */
-
 const card = document.getElementById("card");
 
 card.addEventListener("mousemove", e=>{
@@ -51,9 +47,6 @@ card.addEventListener("mousemove", e=>{
 card.addEventListener("mouseleave", ()=>{
     card.style.transform = "rotateX(0) rotateY(0)";
 });
-
-
-/* ===== PARTICLES BACKGROUND ===== */
 
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
@@ -90,3 +83,4 @@ function animate(){
 }
 
 animate();
+
