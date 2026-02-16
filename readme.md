@@ -33,12 +33,7 @@ Lietošanas instrukcija
 5. Nospied pogu "Aprēķināt".
 6. Rezultāts tiks parādīts zem pogas.
 
-
-Papildu uzdevums
-
-Projekts realizē papildu prasību — paziņojuma krāsas maiņu atkarībā no aprēķinātās cenas.
-
-
 Autors
 
 Kirill Gubrienko 12.B
+
